@@ -41,10 +41,12 @@ To set up the email functionality in your Flask application, you'll need to gene
 4. Google will generate a 16-character password. Copy this password.
 5. In your `personal.py` file, change the `MAIL_PASSWORD` in line 11:
 
-```python
 from:
+```python
 app.config['MAIL_PASSWORD'] = ''  # Replace with the generated app password
+```
 to:
+```python
 app.config['MAIL_PASSWORD'] = 'your_16-character_password'
 ```
 
