@@ -1,6 +1,7 @@
 # Personal Website
 
 This repository contains the source code for my personal website. The site showcases information about myself, my skills in technology and electrical engineering, my projects, and a way to get in touch with me.
+I have hosted my site on Heroku, and you can access it here: https://joaojosemfigueiredo-15f897af9875.herokuapp.com/
 
 ## Technologies Used
 
@@ -10,22 +11,6 @@ This repository contains the source code for my personal website. The site showc
 - **Flet**: Used for developing Python-based desktop applications.
 
 ## Project Structure
-
-/my-personal-website
-|-- /static
-|   |-- /css
-|   |   |-- style.css
-|   |-- /images
-|   |   |-- personal_photo.jpeg
-|   |   |-- ...other images and logos...
-|-- /templates
-|   |-- index.html
-|   |-- about-me.html
-|   |-- projects.html
-|   |-- contact.html
-|-- app.py
-|-- README.md
-
 - `static/`: This folder contains static files such as CSS, JavaScript, and images.
 - `templates/`: Contains HTML templates which are rendered by Flask.
 - `app.py`: The main application file for Flask that includes the routes and server logic.
