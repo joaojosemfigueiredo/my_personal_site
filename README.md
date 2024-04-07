@@ -10,7 +10,7 @@ I have hosted my site on Heroku, and you can access it here: https://joaojosemfi
 - **CSS**: Visual styles for the pages.
 
 ## Project Structure
-- `static/`: This folder contains static files such as CSS, JavaScript, and images.
+- `static/`: This folder contains static files such as CSS, pdfs, and images.
 - `templates/`: Contains HTML templates which are rendered by Flask.
 - `app.py`: The main application file for Flask that includes the routes and server logic.
 
