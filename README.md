@@ -8,7 +8,6 @@ I have hosted my site on Heroku, and you can access it here: https://joaojosemfi
 - **Flask**: A micro web framework for Python that was used to build the backend of the site.
 - **HTML**: Markup for the content of the pages.
 - **CSS**: Visual styles for the pages.
-- **Flet**: Used for developing Python-based desktop applications.
 
 ## Project Structure
 - `static/`: This folder contains static files such as CSS, JavaScript, and images.
