@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - João José Medeiros de Figueiredo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/sobre-mim">Sobre mim</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Contato</h1>
+    </header>
+    <main>
+        <section>
+            <h2>João José Medeiros de Figueiredo</h2>
+            <p>Entre em contato comigo através das seguintes opções:</p>
+            <ul>
+                <li>Email: <a href="mailto:joaojose.mdf@gmail.com">joaojose.mdf@gmail.com</a></li>
+                <li>Telefone: <a href="tel:+5548999342127">+55 48 99934-2127</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Envie uma mensagem</h2>
+            <form action="/contato" method="post">
+                <label for="name">Seu Nome:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Seu Email (para que eu possa te responder!):</label><br>
+                <input type="email" id="email" name="email"><br> <!-- Removida a obrigatoriedade -->
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><img src="{{ url_for('static', filename='gmail.png') }}"  alt="gmail" class="tech-logo"> Email: figueiredojoaojose.sci@gmail.com</p>
+            <p><img src="{{ url_for('static', filename='linkedin.png') }}"  alt="linkedin" class="tech-logo"> LinkedIn: <a href="https://www.linkedin.com/in/joomdf/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/joomdf/</a></p>
+            <p><img src="{{ url_for('static', filename='github.png') }}"  alt="github" class="tech-logo"> GitHub: <a href="https://github.com/joaojosemfigueiredo" target="_blank" rel="noopener noreferrer">https://github.com/joaojosemfigueiredo</a></p>
+        </div>
+    </footer>
+</body>
+</html>

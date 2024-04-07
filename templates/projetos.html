@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - João José Medeiros de Figueiredo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/sobre-mim">Sobre mim</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Projetos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Otimização Multiobjetivo utilizando Algoritmo Genético</h2>
+            <p>Trabalho com otimização de máquinas elétricas, escolhendo quais os melhores parâmetros para minimizar perdas e maximizar a eficiência</p>
+        </section>
+        <section>
+            <h2>Extração Automática de Linhas de Costa da Região da Lagoa da Conceição em Florianópolis</h2>
+            <p>Este projeto envolve a utilização de OpenCV e QGIS para análise de imagens de satélite (LandSat-5 e 7, CBERS-4A) com o objetivo de extrair automaticamente as linhas de costa da região da Lagoa da Conceição em Florianópolis. O estudo fornece insights valiosos sobre a dinâmica costeira e auxilia em práticas de gestão costeira sustentável.</p>
+            <p></p>
+            <a href="/static/relatorio_projeto_lagoa_opencv.pdf" download>Clique aqui para baixar o PDF do projeto</a>
+        </section>
+        <section>
+            <h2>Sistema Automatizado para Análise de Solicitações de Acesso de Minigeradores em Geração Distribuída</h2>
+            <p>Desenvolvimento de um sistema automatizado para facilitar a análise de solicitações de acesso de minigeradores em geração distribuída. O projeto visa otimizar o processo de análise, reduzindo o tempo e aumentando a eficiência na conexão de novos geradores ao sistema elétrico.</p>
+            <a href="https://github.com/joaojosemfigueiredo/Sistema-Automatizado-para-Analise-de-Solicitacoes-de-Acesso-de-Minigeradores-em-Geracao-Distribuida" target="_blank" rel="noopener noreferrer">Acesse o projeto no GitHub</a>
+            <p></p>
+            <a href="/static/TCC_Joao_Jose_Medeiros_de_Figueiredo.pdf" download>Clique aqui para baixar o PDF do TCC</a>
+        </section>
+        <section>
+            <h2>Meu Site Pessoal</h2>
+            <p>Construído com Flask, HTML5, CSS3</p>
+            <a href="https://github.com/joaojosemfigueiredo/my_personal_site" target="_blank" rel="noopener noreferrer">Acesse o projeto no GitHub</a>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><img src="{{ url_for('static', filename='gmail.png') }}"  alt="gmail" class="tech-logo"> Email: figueiredojoaojose.sci@gmail.com</p>
+            <p><img src="{{ url_for('static', filename='linkedin.png') }}"  alt="linkedin" class="tech-logo"> LinkedIn: <a href="https://www.linkedin.com/in/joomdf/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/joomdf/</a></p>
+            <p><img src="{{ url_for('static', filename='github.png') }}"  alt="github" class="tech-logo"> GitHub: <a href="https://github.com/joaojosemfigueiredo" target="_blank" rel="noopener noreferrer">https://github.com/joaojosemfigueiredo</a></p>
+        </div>
+    </footer>
+</body>
+</html>

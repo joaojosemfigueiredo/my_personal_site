@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/sobre-mim">Sobre mim</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>João José Medeiros de Figueiredo</h1>
+        <h4>Engenheiro Eletricista e Programador | 26 anos</h4>
+    </header>
+    <div class="content">
+        <div class="profile-image">
+            <img src="{{ url_for('static', filename='foto_pessoal.jpeg') }}" alt="João José">
+        </div>
+        <div class="info">
+            <h2 class="welcome-title">Seja bem-vindo!</h2>
+            <h3 class="section-title">Tecnologias que domino:</h3>
+            <h3>Python</h3>
+            <ul>
+                <li>
+                    Optimization - Pymoo, scipy, numpy
+                    <img src="{{ url_for('static', filename='pymoo.png') }}" alt="pymoo" class="tech-logo">
+                    <img src="{{ url_for('static', filename='scipy.png') }}" alt="scipy" class="tech-logo">
+                    <img src="{{ url_for('static', filename='numpy.png') }}" alt="numpy" class="tech-logo">
+                </li>
+                <li>
+                    Data Science - Pandas, openpyxl
+                    <img src="{{ url_for('static', filename='pandas.png') }}" alt="Pandas" class="tech-logo">
+                    <img src="{{ url_for('static', filename='openpyxl.jpeg') }}" alt="openpyxl" class="tech-logo">
+                </li>
+                <li>
+                    Web Scraping - Selenium, BeautifulSoup
+                    <img src="{{ url_for('static', filename='selenium.png') }}" alt="Selenium" class="tech-logo">
+                    <img src="{{ url_for('static', filename='beautifulsoup.png') }}" alt="beautifulsoup" class="tech-logo">
+                </li>
+                <li>
+                    Web development - Flask, HTML5, CSS3
+                    <img src="{{ url_for('static', filename='flask.png') }}" alt="flask" class="tech-logo">
+                    <img src="{{ url_for('static', filename='html.png') }}" alt="html" class="tech-logo">
+                    <img src="{{ url_for('static', filename='css.png') }}" alt="css" class="tech-logo">
+                </li>
+                <li>
+                    Desktop development - Flet, Dearpygui, PysimpleGUI, Pycairo, Python-docx
+                    <img src="{{ url_for('static', filename='flet.png') }}" alt="flet" class="tech-logo">
+                    <img src="{{ url_for('static', filename='dearpygui.jpeg') }}" alt="dearpygui" class="tech-logo">
+                    <img src="{{ url_for('static', filename='pysimplegui.png') }}" alt="pysimplegui" class="tech-logo">
+                    <img src="{{ url_for('static', filename='pycairo.png') }}" alt="pycairo" class="tech-logo">
+                    <img src="{{ url_for('static', filename='python_docx.png') }}" alt="python_docx" class="tech-logo">
+                </li>
+            </ul>
+            <h3>Engenharia Elétrica</h3>
+            <ul>
+                <li>
+                    Método dos Elementos Finitos (MEF) aplicados a problemas de Eletromagnetismo.
+                    <img src="{{ url_for('static', filename='elmer.jpg') }}" alt="elmer" class="tech-logo">
+                </li>
+                <li>
+                    Geração Distribuída
+                    <img src="{{ url_for('static', filename='geracao_distribuida.jpg') }}" alt="geracao_distribuida" class="tech-logo">
+                </li>
+                <li>
+                    Projetos de Máquinas Elétricas
+                    <img src="{{ url_for('static', filename='axial_motor.jpeg') }}" alt="axial_motor" class="tech-logo">
+                    <img src="{{ url_for('static', filename='motor.webp') }}" alt="motor" class="tech-logo">
+                    <img src="{{ url_for('static', filename='transformador.webp') }}" alt="transformador" class="tech-logo">
+                </li>
+                <li>
+                    Projetos Elétricos
+                    <img src="{{ url_for('static', filename='projetos_eletricos.jpeg') }}" alt="projetos_eletricos" class="tech-logo">
+                </li>
+            </ul>
+            <h3>Banco de Dados</h3>
+            <ul>
+                <li>
+                    SQL - MySQL, SQlite3
+                    <img src="{{ url_for('static', filename='sqlite3.jpeg') }}" alt="sqlite3" class="tech-logo">
+                    <img src="{{ url_for('static', filename='mysql.png') }}" alt="mysql" class="tech-logo">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-info">
+            <p><img src="{{ url_for('static', filename='gmail.png') }}"  alt="gmail" class="tech-logo"> Email: figueiredojoaojose.sci@gmail.com</p>
+            <p><img src="{{ url_for('static', filename='linkedin.png') }}"  alt="linkedin" class="tech-logo"> LinkedIn: <a href="https://www.linkedin.com/in/joomdf/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/joomdf/</a></p>
+            <p><img src="{{ url_for('static', filename='github.png') }}"  alt="github" class="tech-logo"> GitHub: <a href="https://github.com/joaojosemfigueiredo" target="_blank" rel="noopener noreferrer">https://github.com/joaojosemfigueiredo</a></p>
+        </div>
+    </footer>
+</body>
+</html>

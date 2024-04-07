@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/sobre-mim">Sobre mim</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>João José Medeiros de Figueiredo</h1>
+        <h4>Engenheiro Eletricista e Programador | 26 anos</h4>
+    </header>
+    <main>
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python: com ênfase em ciência de dados, web scraping e criação de programas desktop.</li>
+                <li>AutoCAD: com ênfase em projetos elétricos residenciais e comerciais.</li>
+                <li>Corel Draw e Photoshop e uso da biblioteca OpenCV para Processamento de Imagem.</li>
+                <li>Microsoft Word, Excel (avançado, biblioteca pandas, VBA básico).</li>
+                <li>Método dos Elementos Finitos (MEF) aplicados a problemas de Eletromagnetismo.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>Mestrado em Engenharia Elétrica na área de Eletromagnetismo e Dispositivos Eletromagnéticos em andamento no PPGEEL/UFSC, Universidade Federal de Santa Catarina - UFSC (2023). <p>Em andamento</p></li>
+                <li>Bacharelado em Engenharia Elétrica pela Universidade Federal de Santa Catarina - UFSC - Conclusão 2022. <img src="{{ url_for('static', filename='ufsc.png') }}" alt="ufsc" class="tech-logo">
+                    <ul>
+                        <li><a href="/static/diploma_ufsc.pdf" download>Clique aqui para baixar o diploma</a></li>
+                        <li><a href="/static/historico_ufsc.PDF" download>Clique aqui para baixar o histórico acadêmico</a></li>
+                    </ul>
+                </li>
+                <li>Curso Técnico Integrado em Eletrotécnica pelo Instituto Federal de Santa Catarina - IFSC - Conclusão 2016. <img src="{{ url_for('static', filename='ifsc.png') }}" alt="ifsc" class="tech-logo">
+                    <ul>
+                        <li><a href="/static/diploma_ifsc.pdf" download>Clique aqui para baixar diploma</a></li>
+                        <li><a href="/static/historico_ifsc.PDF" download>Clique aqui para baixar o histórico acadêmico</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li>Estágio na ENEX O&M (Março 2016 a Julho 2016) - Atividades de coleta e organização de dados, além da operação em tempo real de usinas de geração de energia. <img src="{{ url_for('static', filename='enex.png') }}" alt="enex" class="tech-logo">
+                    <ul>
+                        <li><a href="/static/relatorio_estagio_enex.pdf" download>Clique aqui para baixar o PDF do relatório de estágio realizado na ENEX</a></li>
+                    </ul>
+                </li>
+                <li>Estágio na CELESC Distribuição S.A. (Abril 2022 a Fevereiro 2023) - Atividades no Departamento de Geração Distribuída, auxiliando no processo de análise e conexão de micro e mini geradores, automatizando processos administrativos com a linguagem de programação Python. <img src="{{ url_for('static', filename='celesc.png') }}" alt="celesc" class="tech-logo">        
+                    <ul>
+                        <li><a href="/static/relatorio_estagio_celesc.pdf" download>Clique aqui para baixar o PDF do relatório de estágio realizado na CELESC</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Cursos</h2>
+            <ul>
+                <li>Curso Profissionalizante de Computação - C.D.P - Conclusão 2012. <a href="/static/profissionalizante_em_computacao.pdf" download>Clique aqui para baixar diploma deste curso</a></li>
+                <li>Curso de Digitação - C.D.P. - Conclusão 2011. <a href="/static/digitacao.pdf" download>Clique aqui para baixar diploma deste curso</a></li>
+                <li>Curso de Inglês Intermediário.- Conclusão 2012 <a href="/static/ingles.pdf" download>Clique aqui para baixar diploma deste curso</a></li>
+                <li>CS50's Introduction to Computer Science - Harvard edX - Conclusão 2024. <img src="{{ url_for('static', filename='harvard.png') }}" alt="harvard" class="tech-logo"> <a href="/static/CS50x.pdf" download>Clique aqui para baixar diploma deste curso</a></li>
+                <li>Certificado de Eletricista Residencial.- Conclusão 2016 <img src="{{ url_for('static', filename='ifsc.png') }}" alt="ifsc" class="tech-logo"> <a href="/static/eletricista_residencial.pdf" download>Clique aqui para baixar diploma deste curso</a></li>
+                <li>Certificado de Eletricista Predial.- Conclusão 2016 <img src="{{ url_for('static', filename='ifsc.png') }}" alt="ifsc" class="tech-logo"> <a href="/static/eletricista_predial.pdf" download>Clique aqui para baixar diploma deste curso</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Competências Interpessoais</h2>
+            <ul>
+                <li>Sou uma pessoa extremamente comunicativa, que se destaca pela habilidade em trabalhar em equipe. Durante seis anos, participei ativamente de projetos sociais na cidade de Florianópolis, onde pude contribuir em filantropias, organização de eventos e liderança de grupos jovens.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><img src="{{ url_for('static', filename='gmail.png') }}"  alt="gmail" class="tech-logo"> Email: figueiredojoaojose.sci@gmail.com</p>
+            <p><img src="{{ url_for('static', filename='linkedin.png') }}"  alt="linkedin" class="tech-logo"> LinkedIn: <a href="https://www.linkedin.com/in/joomdf/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/joomdf/</a></p>
+            <p><img src="{{ url_for('static', filename='github.png') }}"  alt="github" class="tech-logo"> GitHub: <a href="https://github.com/joaojosemfigueiredo" target="_blank" rel="noopener noreferrer">https://github.com/joaojosemfigueiredo</a></p>
+        </div>
+    </footer>
+</body>
+</html>

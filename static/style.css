@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B29FAF;
+    color: #2D0254;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('/static/header-background.png');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+    display: flex; /* Added for horizontal layout */
+    justify-content: center; /* Added for horizontal layout */
+}
+
+nav ul li {
+    margin: 0 10px; /* Added space between menu items */
+}
+
+nav ul li a, nav ul li a:link, nav ul li a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #555;
+    border-color: #222;
+}
+
+nav ul li a.active {
+    border-color: black;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0; /* Aumente este valor conforme necessário para mais espaço vertical */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Empilha os links verticalmente */
+        align-items: center; /* Centraliza os links */
+    }
+
+    nav ul li {
+        display: block; /* Faz cada link ocupar a largura inteira */
+        margin: 10px 0; /* Aumenta o espaço entre os itens de menu */
+    }
+
+    nav ul li a, nav ul li a:link, nav ul li a:visited {
+        width: 100%; /* Faz os links ocuparem a largura total */
+        box-sizing: border-box; /* Inclui o padding na largura */
+        padding: 15px 20px; /* Aumenta o padding para mais espaço vertical */
+    }
+
+    /* Se quiser, também pode ajustar a fonte para dispositivos móveis para ser menor */
+    nav ul li a, nav ul li a:link, nav ul li a:visited {
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h4 {
+    color: #705CBB;
+    text-shadow: 1px 1px 0px #ffffff, -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff;
+}
+
+h2, h3, h5, h6 {
+    color: #705CBB;
+}
+
+a, a:visited {
+    color: #2D0254;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+form label {
+    color: #000000;
+}
+
+input[type="text"], input[type="email"], textarea {
+    color: #000000;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #4B0082; /* Cor roxa escura */
+    color: white; /* Texto branco para contraste */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    margin-top: 30px; /* Separação do conteúdo acima */
+    clear: both; /* Previne que o conteúdo flutuante afete o rodapé */
+}
+
+footer a, footer a:link, footer a:visited {
+    color: white; /* Define a cor dos links para branco */
+    text-decoration: underline; /* Garante que os links sejam sublinhados */
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: underline; /* Mantém o sublinhado ao passar o mouse e ao focar */
+    color: #CCC; /* Altera a cor ao passar o mouse, se desejado */
+}
+
+
+.contact-info p {
+    margin: 10px 0; /* Espaçamento vertical para os itens do rodapé */
+}
+
+/* Estilos adicionados para a nova estrutura do index.html */
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-image {
+    flex-shrink: 0; /* Impede que a imagem seja encolhida */
+    margin-right: 20px; /* Aumenta a margem para afastar o texto da imagem */
+}
+
+.profile-image img {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px; /* Limita a altura da imagem */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço do elemento img */
+    margin-right: 200px; /* Ajuste essa margem para aumentar o espaço entre a imagem e o texto */
+    margin-top: 150px; /* Ajuste essa margem para aumentar o espaço entre a imagem e o texto */
+}
+
+.info {
+    margin-left: -150px; /* Ajuste este valor para mover o texto mais para a esquerda */
+}
+
+.info h2, .info h3 {
+    color: #705CBB;
+    max-width: calc(100% - 10px); /* Subtrai o tamanho da imagem e da margem */
+}
+
+.info ul {
+    list-style-type: none;
+}
+
+.info li {
+    padding: 5px 0;
+}
+
+.tech-logo {
+    height: 20px; /* ou a altura que você deseja */
+    width: auto; /* mantém a proporção do logotipo */
+    margin-right: 10px; /* espaço entre o logotipo e o texto */
+    vertical-align: middle; /* alinha o logotipo verticalmente com o texto */
+}
+
+.welcome-title {
+    text-align: center; /* Centraliza o texto do elemento */
+    margin-left: -50px; /* Ajuste este valor para mover o texto mais para a esquerda */
+}
